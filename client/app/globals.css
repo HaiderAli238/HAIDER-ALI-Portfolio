@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  background: #020617;
+  color: white;
+}
+
+body {
+  background-color: var(--deep-dark);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Background Rotating Glow Box */
+.glow-box-rotate {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  background: conic-gradient(from 0deg, transparent, var(--electric-cyan), transparent);
+  animation: rotateGlow 4s linear infinite;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+@keyframes rotateGlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Glassmorphism for Cards */
+.premium-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(0, 242, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}

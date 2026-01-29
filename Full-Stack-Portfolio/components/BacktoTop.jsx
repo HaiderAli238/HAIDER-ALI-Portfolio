@@ -7,12 +7,10 @@ const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  // Check karna ke component client par load ho gaya hai
   useEffect(() => {
     setMounted(true);
     
     const toggleVisibility = () => {
-      // Agar 300px se zyada scroll ho to button dikhao
       if (window.scrollY > 300) {
         setIsVisible(true);
       } else {
@@ -31,7 +29,6 @@ const BackToTop = () => {
     });
   };
 
-  // Hydration error se bachne ke liye
   if (!mounted) return null;
 
   return (

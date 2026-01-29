@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-// Logos/Icons import karein
 import { Search, Code2, Server, Briefcase } from 'lucide-react';
 
 const experiences = [
@@ -10,7 +9,7 @@ const experiences = [
     company: "NETSOL Solutions",
     date: "Dec 2025 - Present",
     desc: "MERN Stack Developer building modern, scalable, and high-performance web applications using MongoDB, Express, React, and Node.js.",
-    icon: <Server size={24} />, // MERN Stack Logo
+    icon: <Server size={24} />,
     skills: ["MongoDB", "Express", "React", "Node.js"]
   },
   {
@@ -18,7 +17,7 @@ const experiences = [
     company: "Codexpace",
     date: "Aug 2025 - Dec 2025",
     desc: "Focused on backend automation and Python-based solutions during an intensive internship period.",
-    icon: <Code2 size={24} />, // Python/Coding Logo
+    icon: <Code2 size={24} />,
     skills: ["Python", "Automation", "Backend"]
   },
   {
@@ -26,7 +25,7 @@ const experiences = [
     company: "Nexgen Solutions",
     date: "Feb 2024 - June 2024",
     desc: "Worked on building scalable server-side logic and integrating RESTful APIs using the MERN stack.",
-    icon: <Server size={24} />, // Node.js/Server Logo
+    icon: <Server size={24} />,
     skills: ["Node.js", "Express", "MERN"]
   },
   {
@@ -34,7 +33,7 @@ const experiences = [
     company: "Axcess Company",
     date: "Nov 2025 - Present",
     desc: "Currently managing remote SEO operations and optimization strategies to enhance digital presence.",
-    icon: <Search size={24} />, // SEO Logo
+    icon: <Search size={24} />,
     skills: ["SEO", "Analytics", "Strategy"]
   },
 ];
@@ -43,12 +42,9 @@ const Experience = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    // "start end" matlab jab section screen mein enter ho
-    // "end start" matlab jab section screen se bahar nikal jaye
     offset: ["start end", "end start"] 
   });
 
-  // Stiffness aur Damping ko balance kiya taake scroll up/down responsive rahay
   const scaleY = useSpring(scrollYProgress, { stiffness: 150, damping: 20, restDelta: 0.001 });
 
   return (
@@ -64,8 +60,7 @@ const Experience = () => {
         <div ref={ref} className="relative">
           {/* Background Grey Line */}
           <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-gray-800" />
-          
-          {/* Scrolling Cyan Line - Fix: origin-top ensures it moves with scroll up */}
+
           <motion.div 
             style={{ scaleY }}
             className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-[#00f2ff] origin-top shadow-[0_0_15px_#00f2ff]"
@@ -75,13 +70,11 @@ const Experience = () => {
             <div key={index} className={`relative flex items-center justify-between mb-24 w-full ${
               index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'
             }`}>
-              
-              {/* CENTRAL NODE LOGO */}
+
               <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-[#020617] border-2 border-[#00f2ff] flex items-center justify-center z-10 shadow-[0_0_20px_rgba(0,242,255,0.6)] text-[#00f2ff]">
                 {exp.icon}
               </div>
 
-              {/* Experience Card */}
               <motion.div 
                 initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
                 whileInView={{ opacity: 1, x: 0 }}

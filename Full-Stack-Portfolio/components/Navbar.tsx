@@ -1,13 +1,12 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react'; // Sun aur Moon icon yahan se hata diye
+import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  // Scroll effect ko handle karne ke liye
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -36,7 +35,6 @@ const Navbar = () => {
           <span className="text-white drop-shadow-[0_0_10px_#00f2ff]">HAIDER ALI</span>
         </div>
 
-        {/* Desktop Links - Yahan se Theme Button hata diya hai */}
         <div className="hidden md:flex items-center gap-1">
           {navLinks.map((link) => (
             <a
@@ -50,7 +48,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center gap-4">
            <button onClick={() => setIsOpen(!isOpen)} className="text-[#00f2ff]">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -58,7 +55,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
       {isOpen && (
         <motion.div 
           initial={{ opacity: 0, y: -20 }}

@@ -7,15 +7,12 @@
     return (
       <section
         id="home"
-        className="min-h-screen flex flex-col lg:flex-row items-center justify-between px-4 lg:px-8 py-32 bg-[#020617] overflow-hidden"
-      >
-        {/* Left Content - Width thori kam ki taake image ko jagah milay */}
+        className="min-h-screen flex flex-col lg:flex-row items-center justify-between px-4 lg:px-8 py-32 bg-[#020617] overflow-hidden">
         <div className="flex-[1.2] space-y-6 z-10 lg:pr-10">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="inline-block px-4 py-2 bg-gradient-to-r from-[#00f2ff] to-[#3b82f6] rounded-lg text-white font-bold text-sm shadow-[0_0_15px_rgba(0,242,255,0.3)]"
-          >
+            className="inline-block px-4 py-2 bg-gradient-to-r from-[#00f2ff] to-[#3b82f6] rounded-lg text-white font-bold text-sm shadow-[0_0_15px_rgba(0,242,255,0.3)]">
             Hello, I'm
           </motion.div>
 
@@ -36,8 +33,7 @@
                 2000,
               ]}
               repeat={Infinity}
-              cursor={true}
-            />
+              cursor={true}/>
           </div>
 
           <p className="text-gray-400 max-w-lg text-lg leading-relaxed">
@@ -48,8 +44,7 @@
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-10 py-4 bg-gradient-to-r from-[#00f2ff] to-[#3b82f6] text-white font-black rounded-full shadow-[0_0_20px_rgba(0,242,255,0.4)]"
-            >
+              className="px-10 py-4 bg-gradient-to-r from-[#00f2ff] to-[#3b82f6] text-white font-black rounded-full shadow-[0_0_20px_rgba(0,242,255,0.4)]">
               Let's Talk
             </motion.button>
           </a>

@@ -69,7 +69,6 @@ const Skills = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              // Box Hover Style: Added border weight and heavy shadow
               className="bg-[#0f172a]/40 border border-white/5 rounded-[2.5rem] p-8 
                          hover:border-[#00f2ff]/60 hover:bg-[#0f172a]/80
                          hover:shadow-[0_20px_50px_rgba(0,242,255,0.2)] 
@@ -87,7 +86,6 @@ const Skills = () => {
               <div className="grid grid-cols-3 gap-y-8 gap-x-4">
                 {cat.skills.map((skill, sIdx) => (
                   <div key={sIdx} className="flex flex-col items-center gap-3">
-                    {/* Icon container - clean, no individual glow */}
                     <div className="w-14 h-14 bg-[#1e293b]/50 rounded-2xl flex items-center justify-center p-3 border border-white/5 group-hover:border-white/10 transition-all shadow-inner">
                        <img 
                         src={skill.icon} 
@@ -102,7 +100,6 @@ const Skills = () => {
                 ))}
               </div>
 
-              {/* Box Bottom Glow Accent */}
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-[#00f2ff]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
           ))}

@@ -9,7 +9,6 @@ const projects = [
   {
     title: "E-Commerce",
     description: "Complete shopping solution with Stripe, tracking, and admin panel.",
-    // Optimized Shopping Cart Image
     image: "https://plus.unsplash.com/premium_photo-1664201890375-f8fa405cdb7d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["Next.js", "MongoDB", "Stripe"],
     category: "Fullstack",
@@ -19,7 +18,6 @@ const projects = [
   {
     title: "ClientNest Agency Hub",
     description: "SaaS platform for client onboarding and automated invoicing.",
-    // Optimized Office/Team Image
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1184&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["React", "Node.js", "PostgreSQL"],
     category: "Fullstack",
@@ -29,7 +27,6 @@ const projects = [
   {
     title: "AI Chatboard Assistant",
     description: "Intelligent AI assistant using OpenAI with context memory.",
-    // Optimized Tech/AI Image
     image: "https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["OpenAI", "Next.js", "Tailwind"],
     category: "Fullstack",
@@ -39,7 +36,6 @@ const projects = [
   {
     title: "SaaS Analytics Dashboard",
     description: "Complex data visualization with interactive charts and dark mode.",
-    // Optimized Data/Dashboard Image
     image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=60&w=800",
     tags: ["React", "Recharts", "Framer"],
     category: "Frontend",
@@ -49,7 +45,6 @@ const projects = [
   {
     title: "Luxury Estate UI",
     description: "Premium real estate site with smooth GSAP animations.",
-    // Optimized Real Estate Image
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=60&w=800",
     tags: ["Next.js", "GSAP", "Tailwind"],
     category: "Frontend",
@@ -59,7 +54,6 @@ const projects = [
   {
     title: "Secure Auth Engine",
     description: "Authentication microservice with JWT, 2FA, and Docker.",
-    // Optimized Security/Code Image
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=60&w=800",
     tags: ["Node.js", "Redis", "Docker"],
     category: "Backend",
@@ -69,7 +63,6 @@ const projects = [
   {
     title: "Real-time Notification API",
     description: "Scalable backend for instant push notifications and socket events.",
-    // Optimized Network/Server Image
     image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=800&auto=format&fit=crop",
     tags: ["Express", "Socket.io", "AWS"],
     category: "Backend",
@@ -79,7 +72,6 @@ const projects = [
   {
     title: "Healthify Mobile App",
     description: "Fitness app with calorie tracking and biometric integration.",
-    // Optimized Mobile/Health Image
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=800",
     tags: ["React Native", "Firebase"],
     category: "Mobile",
@@ -89,7 +81,6 @@ const projects = [
   {
   title: "Foodie Express App",
   description: "Cross-platform food delivery app with real-time order tracking and map integration.",
-  // Mobile app oriented clean food image (Optimized for fast load)
   image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=60&w=800",
   tags: ["React Native", "Firebase", "Google Maps"],
   category: "Mobile",

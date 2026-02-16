@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  background-color: #0A1128; /* Deep midnight background as per Timedriven pattern */
+  -webkit-font-smoothing: antialiased;
+}

@@ -8,27 +8,9 @@ const categories = ["All", "Frontend", "Backend", "Fullstack", "Mobile"];
 const projects = [
   {
     title: "E-Commerce Web App",
-    description: "Complete shopping solution with Stripe, tracking, and admin panel.",
-    image: "https://plus.unsplash.com/premium_photo-1664201890375-f8fa405cdb7d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "A full-featured e-commerce platform built with React and Node.js.",
+    image: "https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&q=80&w=800",
     tags: ["Next.js", "MongoDB", "Stripe"],
-    category: "Fullstack",
-    live: "#",
-    github: "#"
-  },
-  {
-    title: "ClientNest Agency Hub",
-    description: "SaaS platform for client onboarding and automated invoicing.",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1184&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["React", "Node.js", "PostgreSQL"],
-    category: "Fullstack",
-    live: "#",
-    github: "#"
-  },
-  {
-    title: "AI Chatboard Assistant",
-    description: "Intelligent AI assistant using OpenAI with context memory.",
-    image: "https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["OpenAI", "Next.js", "Tailwind"],
     category: "Fullstack",
     live: "#",
     github: "#"
@@ -38,15 +20,6 @@ const projects = [
     description: "Complex data visualization with interactive charts and dark mode.",
     image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=60&w=800",
     tags: ["React", "Recharts", "Framer"],
-    category: "Frontend",
-    live: "#",
-    github: "#"
-  },
-  {
-    title: "Luxury Estate UI",
-    description: "Premium real estate site with smooth GSAP animations.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=60&w=800",
-    tags: ["Next.js", "GSAP", "Tailwind"],
     category: "Frontend",
     live: "#",
     github: "#"
@@ -70,22 +43,13 @@ const projects = [
     github: "#"
   },
   {
-    title: "Healthify Mobile App",
-    description: "Fitness app with calorie tracking and biometric integration.",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=800",
-    tags: ["React Native", "Firebase"],
+    title: "IronPulse",
+    description: "Fuel your strength, track your progress, and crush your fitness goals.",
+    image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?auto=format&fit=crop&q=80&w=800",
+    tags: ["React Native", "MongoDB", "Express"],
     category: "Mobile",
     live: "#",
     github: "#"
-  },
-  {
-  title: "Foodie Express App",
-  description: "Cross-platform food delivery app with real-time order tracking and map integration.",
-  image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=60&w=800",
-  tags: ["React Native", "Firebase", "Google Maps"],
-  category: "Mobile",
-  live: "#",
-  github: "#"
   },
 ];
 

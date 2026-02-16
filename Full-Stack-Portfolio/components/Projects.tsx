@@ -9,7 +9,7 @@ const projects = [
   {
     title: "E-Commerce Web App",
     description: "A full-featured e-commerce platform built with React and Node.js.",
-    image: "https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&q=80&w=800",
+    image: "https://plus.unsplash.com/premium_photo-1664201890375-f8fa405cdb7d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["Next.js", "MongoDB", "Stripe"],
     category: "Fullstack",
     live: "#",
@@ -45,7 +45,7 @@ const projects = [
   {
     title: "IronPulse",
     description: "Fuel your strength, track your progress, and crush your fitness goals.",
-    image: "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["React Native", "MongoDB", "Express"],
     category: "Mobile",
     live: "#",
